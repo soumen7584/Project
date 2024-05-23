@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>calculeter</title>
+    <style>#calculeter{
+        border: 1px solid rgba(0, 0, 0, 0.312);
+        width: 350px;
+      
+         background-color: rgb(0, 0, 0); 
+    }
+    .input_box{
+        width: 340px;
+        height: 50px;
+        font-size: 20px;
+        
+    }
+    .button{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        background-color: black;
+        
+    }
+    .button_size{
+        height: 60px;
+        width: 75px;
+        margin: 1px;
+        border: none;
+        border-radius: 5px;
+        color:white;
+        background-color: rgb(83, 78, 78);
+        font-size: 20px;
+    }</style>
+</head>
+<body>
+    <div id="calculeter"> 
+        <div style="margin: 10px; font-size: 25px;color: white;">Calculator</div>
+        <input class="input_box" type="text" placeholder="0" readonly>
+    
+    <div class="button">
+        <button class="button_size" onclick="curentvalues = curentvalues +'1'  
+        document.querySelector('.input_box').value=curentvalues;
+        ">1</button>
+        <button class="button_size" onclick="curentvalues = curentvalues +'2'  
+        document.querySelector('.input_box').value=curentvalues;
+        ">2</button>
+        <button class="button_size"onclick="curentvalues = curentvalues +'3'  
+        document.querySelector('.input_box').value=curentvalues;
+        ">3</button>
+        <button class="button_size" onclick="curentvalues = '';
+        document.querySelector('.input_box').value=curentvalues;
+        ">c</button>
+        <button class="button_size"onclick="curentvalues = curentvalues +'4'  
+        document.querySelector('.input_box').value=curentvalues;
+        ">4</button>
+        <button class="button_size" onclick="curentvalues = curentvalues +'5'  
+        document.querySelector('.input_box').value=curentvalues;
+        ">5</button>
+        <button class="button_size" onclick="curentvalues = curentvalues +'6'  
+        document.querySelector('.input_box').value=curentvalues;
+        ">6</button>
+        
+        <button class="button_size" onclick="curentvalues = curentvalues +'7'  
+        document.querySelector('.input_box').value=curentvalues;
+        ">7</button>
+        <button class="button_size" onclick="curentvalues = curentvalues +'8'  
+        document.querySelector('.input_box').value=curentvalues;
+        ">8</button>
+        <button class="button_size" onclick="curentvalues = curentvalues +'9'  
+        document.querySelector('.input_box').value=curentvalues;
+        ">9</button>
+        <button class="button_size">+</button>
+        <button class="button_size" onclick="curentvalues = curentvalues +'0'  
+        document.querySelector('.input_box').value=curentvalues;
+        ">0</button>
+        <button class="button_size" onclick="curentvalues = curentvalues +'/'  
+        document.querySelector('.input_box').value=curentvalues;
+        ">/</button>
+        <button class="button_size"
+        onclick="curentvalues = curentvalues +'%'  
+        document.querySelector('.input_box').value=curentvalues;
+        ">%</button>
+        <button class="button_size" onclick="curentvalues = curentvalues +'-'  
+        document.querySelector('.input_box').value=curentvalues;
+        ">-</button>
+        <button class="button_size" onclick="curentvalues = curentvalues +'+'  
+        document.querySelector('.input_box').value=curentvalues;
+        ">+</button>
+        <button class="button_size" onclick="curentvalues = curentvalues +'.'  
+        document.querySelector('.input_box').value=curentvalues;
+        ">.</button>
+        
+        <button class="button_size" onclick=" 
+        let result=eval(curentvalues) 
+        curentvalues =result 
+        document.querySelector('.input_box').value=curentvalues;
+        ">=</button>
+    </div>
+    </div>
+ <script>
+    var curentvalues='';
+    document.querySelector('.input_box').value=curentvalues;
+
+ </script>
+
+</body>
+</html>
